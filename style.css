@@ -1,0 +1,93 @@
+
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px; font-family: 'DM Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+body {background-color: white; 
+    margin:40px;}
+
+/*This is the div class for the text paragraphs of my article*/
+
+.container {
+    width: 100%;
+    max-width:1200px;
+    margin:0px;
+    padding:10px;
+}
+
+/*Below is for the title and the byline*/
+
+h1 {text-align:center; font-weight: bold; text-decoration:underline; text-decoration-color: rgb(255, 204, 51, 1.0);}
+h4 {margin-bottom:-15px;font-weight: bold;}
+
+/*General image rule*/
+img {
+    display: block;
+    width: 75%; 
+    margin: auto;
+}
+
+/*Styling for the photo under the headline*/
+.lead_photo {max-width:75%; display: block;
+  margin-left: auto;
+  margin-right: auto; margin-top:35px; margin-bottom: 25px;}
+
+/*General div rules for icons and more*/
+.flex{padding: 10px;}
+.flex>div{padding:10px}
+.icon_head {text-align:center;}
+
+/*Styling for the 19x> in the bike figure*/
+#nineteen {text-align: center; font-size: 60px; font-weight: bolder; margin:auto;}
+
+/*Below is for the yellow in-line text spans 
+(and the shade matches the yellow in the icons, because I'm a nerd)*/
+
+.yellow {color: rgb(255, 204, 51, 1.0);}
+
+/*Styling for the caption in the bike figure*/
+#caption {font-style: italic; font-size:12px; text-align: center;}
+
+
+/*Wanted to make the text for the footer a little smaller than everything else*/
+footer {font-size:12px;}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+.flex{
+    display: flex;
+}
+
+.flex>div{flex-basis:25%}
+}
+div.flex{
+justify-content: space-around;}
+
+
+
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
